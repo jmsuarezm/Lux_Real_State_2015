@@ -76,7 +76,6 @@ function storeJson($strData){
     $record=array(); 
     //decode the string
     $jsonVar = json_decode($strData);
-Echo($jsonvar);
     //if the decode ended with no error
     if (json_last_error() === JSON_ERROR_NONE) { 
         $record["id"] = $jsonVar -> id;
