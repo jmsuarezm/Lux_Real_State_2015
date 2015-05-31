@@ -32,7 +32,7 @@ ini_set('max_execution_time', 600);
 setlocale(LC_ALL, 'fr_FR.UTF8');
 
 //the firt time, we set manually the first page
-$value = "/recherche/resultats/bg/500000,850000/br/3,/tb/1/gc/1/c/1/tr/by/w/d,Luxembourg%7CBelair,Bonnevoie,Cents,Hollerich,Limpertsberg,Merl;a,Strassen;a,Bertrange";
+$value = "/recherche/resultats/bg/500000,850000/br/3,/tb/1/gc/1/c/1/tr/by/w/d,Luxembourg%7CBelair,Bonnevoie,Cents,Hollerich,Limpertsberg,Merl;a,Strassen;a,Bertrange;a,Walferdange;a,Kopstal;a,Kehlen;a,Mamer;a,Dippach";
 //if $value is a valid page
 while ($value != "") {
     $htmlCentre = scraperWiki::scrape("http://www.athome.lu" . $value);
